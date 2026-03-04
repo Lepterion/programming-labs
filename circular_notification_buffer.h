@@ -97,14 +97,11 @@ inline int buffer_get_last(const circular_notification_buffer* buf, int k, const
     if (k > buf->count) k = buf->count;
     if (k <= 0) return 0;
 
-    const notification_node* current = buf->head;
-    for (int skip = buf->count - k; skip > 0; --skip) {
-        current = current->next;
-    }
+    const notification_node* current = buf->tail;
 
-    for (int i = 0; i < k; ++i) {
+    for (int i = k - 1; i >= 0; --i) {
         out[i] = &current->entry;
-        current = current->next;
+        current = current->prev;
     }
 
     return k;
