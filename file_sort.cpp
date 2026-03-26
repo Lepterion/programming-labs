@@ -83,6 +83,7 @@ void sortAudioPacketsFileInPlace(string filename, const string& lastGeneratedFil
             cout << "Error: No file generated in this session, and no filename provided!\n";
             return;
         }
+
         filename = lastGeneratedFilename;
         cout << "Using the last generated file: " << filename << "\n";
     }
@@ -120,6 +121,7 @@ void sortAudioPacketsFileInPlace(string filename, const string& lastGeneratedFil
                 readBuffer(file, j, prevBuffer, header.elementSize);
             }
         }
+
         writeBuffer(file, j + 1, keyBuffer, header.elementSize);
     }
 
@@ -150,5 +152,6 @@ void printAudioPacketsFile(const string& filename) {
 
         cout << "[" << i << "] Timestamp: " << timestamp << " | Senders count: " << senders << "\n";
     }
+
     file.close();
 }
