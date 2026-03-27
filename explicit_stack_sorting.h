@@ -2,8 +2,8 @@
 // Created by bopet on 19/03/2026.
 //
 
-#ifndef EXPLICIT_STACK_SORTING_H
-#define EXPLICIT_STACK_SORTING_H
+#ifndef PROGRAMMING_LABS_EXPLICIT_STACK_SORTING_H
+#define PROGRAMMING_LABS_EXPLICIT_STACK_SORTING_H
 
 #include <vector>
 #include <string>
@@ -16,4 +16,4 @@ void quickSortIterative(std::vector<std::string>& arr, int low, int high, bool d
 // Ітеративний Комбінований алгоритм (явний стек)
 void combinedSortIterative(std::vector<std::string>& arr, int low, int high, int threshold);
 
-#endif // EXPLICIT_STACK_SORTING_H
+#endif // PROGRAMMING_LABS_EXPLICIT_STACK_SORTING_H

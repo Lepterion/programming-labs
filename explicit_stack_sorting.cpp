@@ -3,7 +3,7 @@
 //
 
 #include "explicit_stack_sorting.h"
-#include "sorts.h" // Для доступу до hoarePartition та insertionSort
+#include "sorts.h"
 #include <stack>
 #include <utility>
 

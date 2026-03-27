@@ -2,8 +2,8 @@
 // Created by bopet on 19/03/2026.
 //
 
-#ifndef FILE_SORT_H
-#define FILE_SORT_H
+#ifndef PROGRAMMING_LABS_FILE_SORT_H
+#define PROGRAMMING_LABS_FILE_SORT_H
 
 #include <string>
 #include <vector>
@@ -27,4 +27,4 @@ void sortAudioPacketsFileInPlace(std::string filename, const std::string& lastGe
 
 void printAudioPacketsFile(const std::string& filename);
 
-#endif // FILE_SORT_H
+#endif // PROGRAMMING_LABS_FILE_SORT_H

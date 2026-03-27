@@ -77,6 +77,7 @@ void merge(std::vector<std::string>& arr, int left, int mid, int right, bool dem
             arr[k] = R[j];
             j++;
         }
+
         k++;
     }
 
@@ -91,6 +92,7 @@ void merge(std::vector<std::string>& arr, int left, int mid, int right, bool dem
 
 void mergeSort(std::vector<std::string>& arr, int left, int right, bool demo, std::ostream& out) {
     if (left >= right) return;
+
     int mid = left + (right - left) / 2;
     mergeSort(arr, left, mid, demo, out);
     mergeSort(arr, mid + 1, right, demo, out);
